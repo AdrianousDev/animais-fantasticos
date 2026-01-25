@@ -39,5 +39,8 @@ initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
 
-criarQuantidadeAnimais("../../animaisapi.json", ".numeros-grid");
+criarQuantidadeAnimais(
+  "https://raw.githubusercontent.com/AdrianousDev/animais-fantasticos/refs/heads/main/animaisapi.json",
+  ".numeros-grid",
+);
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
