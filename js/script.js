@@ -5,7 +5,7 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
+import Funcionamento from "./modules/funcionamento.js";
 import { criarQuantidadeAnimais } from "./modules/criar-quantidade-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import ScrollAnima from "./modules/scroll-anima.js";
@@ -45,7 +45,8 @@ const menuMobile = new MenuMobile(
 );
 menuMobile.init();
 
-initFuncionamento();
+const funcionamento = new Funcionamento("[data-semana]", "aberto");
+funcionamento.init();
 
 criarQuantidadeAnimais(
   "https://raw.githubusercontent.com/AdrianousDev/animais-fantasticos/refs/heads/main/animaisapi.json",
